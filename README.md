@@ -86,6 +86,7 @@ AI_TEMPERATURE=0.2
 The app supports:
 
 - Native Shopee Ads CSV exports like `Data-+Semua-Iklan-Produk-01_06_2026-29_06_2026.csv`.
+- Shopee on-platform XLSX reports with a `By Campaign Type` sheet.
 - The generated template at `data/templates/ads_import_template.xlsx`.
 
 Daily data is recommended for trend charts, alerts, and better AI analysis. Monthly data is useful for summaries and reconciliation.
