@@ -55,6 +55,7 @@ docker compose up --build
 ```
 
 Compose mounts `./data` into the container so the SQLite database survives container restarts.
+On Docker Desktop for Windows, the service runs as root inside the container so SQLite can write to the bind-mounted `./data` folder.
 
 Open:
 
