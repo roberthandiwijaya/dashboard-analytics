@@ -343,7 +343,9 @@ def _parse_onplatform_period(value):
     if not value or "~" not in str(value):
         return pd.NaT, pd.NaT
     start, end = str(value).split("~", 1)
-    return pd.to_datetime(start, errors="coerce"), pd.to_datetime(end, errors="coerce")
+    return pd.to_datetime(start, errors="coerce", dayfirst=True), pd.to_datetime(
+        end, errors="coerce", dayfirst=True
+    )
 
 
 def _load_shopee_campaign_type_xlsx(file_obj, source_file):
